@@ -13,7 +13,7 @@ var DB *gorm.DB
 
 // InitDB 初始化数据库连接
 func InitDB() {
-	dsn := "root:password@tcp(127.0.0.1:3306)/product_db?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:123456@tcp(127.0.0.1:3306)/product_db?charset=utf8mb4&parseTime=True&loc=Local"
 
 	var err error
 	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
